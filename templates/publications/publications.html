@@ -1,0 +1,16 @@
+<div class="row">
+    {% for publication in publications %}
+    <div class="col-md-4">
+        <h2>{{publication[1]}}</h2>
+        <p>{{publication[2]}}</p>
+        <p>
+            <a
+                class="btn btn-secondary"
+                href="/publications/detail/{{publication[0]}}"
+                role="button"
+                >View details »</a
+            >
+        </p>
+    </div>
+    {% endfor %}
+</div>
